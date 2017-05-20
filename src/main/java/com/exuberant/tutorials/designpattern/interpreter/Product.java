@@ -1,14 +1,17 @@
 package com.exuberant.tutorials.designpattern.interpreter;
 
 public class Product {
-    int price, code;
-    String name;
+    int color, price, size;
 
-    public Product(int price, int code, String name) {
+    public Product(final int color, final int price, final int size) {
         super();
+        this.color = color;
         this.price = price;
-        this.code = code;
-        this.name = name;
+        this.size = size;
     }
 
+    @Override
+    public String toString() {
+        return String.format("color=%d price=%d size=%d", color, price, size);
+    }
 }
