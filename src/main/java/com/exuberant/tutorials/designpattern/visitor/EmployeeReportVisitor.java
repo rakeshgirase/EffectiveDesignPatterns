@@ -9,6 +9,7 @@ class EmployeeReportVisitor implements EmployeeVisitor {
 	void printEmployees(final List<Employee> all) {
 		for (Employee e : all)
 			e.visit(this);
+		System.err.println("Hi");
 	}
 
 	@Override
