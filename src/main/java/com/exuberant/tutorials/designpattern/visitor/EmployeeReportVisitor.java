@@ -2,14 +2,10 @@ package com.exuberant.tutorials.designpattern.visitor;
 
 import java.util.List;
 
-/**
- * Created by rakesh on 20-05-2017.
- */
 class EmployeeReportVisitor implements EmployeeVisitor {
 	void printEmployees(final List<Employee> all) {
 		for (Employee e : all)
 			e.visit(this);
-		System.err.println("Hi");
 	}
 
 	@Override
