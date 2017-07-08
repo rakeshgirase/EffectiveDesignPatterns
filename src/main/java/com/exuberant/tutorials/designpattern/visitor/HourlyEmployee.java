@@ -1,5 +1,9 @@
 package com.exuberant.tutorials.designpattern.visitor;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+
 /**
  * Created by rakesh on 20-05-2017.
  */
